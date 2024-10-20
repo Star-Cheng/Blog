@@ -61,5 +61,3 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  # ... 其他需要排除的文件 ...
-  - index.html
