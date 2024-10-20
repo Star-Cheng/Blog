@@ -1,9 +1,12 @@
 ---
 layout: post
 title: "欢迎来到我的个人网站"
-date: 2024-10-20 16:00:00 +0800
+date:   2024-1-27
 categories: [个人介绍]
 tags: [网站, 社交媒体, 简历]
+comments: true
+author: pianfan
+
 ---
 
 ## 欢迎来到我的个人网站
