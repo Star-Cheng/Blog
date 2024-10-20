@@ -1,8 +1,8 @@
 name: "Gym's blog"
 description: "星城的个人技术博客"
 
-avatar: https://gym.github.io/images/avatar.png
-favicon: https://gym.github.io/images/favicon.ico
+avatar: https://github.com/Star-Cheng/Blog/tree/main/images/avatar.png
+favicon: https://github.com/Star-Cheng/Blog/tree/main/images/favicon.ico
 
 navigation:
   - name: 首页
@@ -18,16 +18,16 @@ excerpt_separator: <!-- more -->
 
 footer-links:
   zhihu: 
-  email: xiongyunhan@outlook.com
+  email: 1517169950@163.com
   facebook:
-  github: pianfan
+  github: star-cheng
   rss: # just type anything here for a working RSS icon
   twitter: 
   youtube:
 
 footer-text: Copyright (c) 2024 Pianfan
 
-url: https://pianfan.github.io
+url: https://star-cheng.github.io/Blog
 
 permalink: /:title/
 paginate_path: /page:num/
