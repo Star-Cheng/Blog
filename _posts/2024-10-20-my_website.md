@@ -27,7 +27,7 @@ author: pianfan
 
 我的个人简历概括了我的教育背景、工作经验和技能。你可以通过以下链接查看我的详细简历:
 
-[查看我的个人简历](https://github.com/Star-Cheng/Blog/blob/main/html/my_website/index.html)
+[查看我的个人简历](https://star-cheng.github.io/Blog/html/index/index.html)
 
 ## 联系我
 
