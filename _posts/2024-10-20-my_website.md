@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "星城的个人网站"
-date:   2024-1-27
-categories: [resume]
-tags: [网站, 社交媒体, 简历]
+date:   2024-10-20
+tags: [简历]
 comments: true
 author: pianfan
 ---
