@@ -2,7 +2,7 @@ name: "Gym's blog"
 description: "星城的个人技术博客"
 
 avatar: https://star-cheng.github.io/Blog/images/avatar.png
-favicon: https://github.com/Star-Cheng/Blog/tree/main/images/favicon.ico
+favicon: https://star-cheng.github.io/Blog/images/star.ico
 
 navigation:
   - name: 首页
