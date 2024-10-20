@@ -61,4 +61,4 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - html/website/hello.html
+  - html
