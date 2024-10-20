@@ -7,7 +7,7 @@ function HomePage() {
       <h1>欢迎来到我的主页</h1>
       <div className={styles.avatarWrapper}>
         <Image
-          src="/images/avatar.png"
+          src="/images/mingren.png"
           alt="我的头像"
           width={200}
           height={200}
