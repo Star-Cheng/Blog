@@ -7,7 +7,6 @@ favicon: https://star-cheng.github.io/Blog/images/star.ico
 navigation:
   - name: 首页
     url: https://star-cheng.github.io/Blog
-    baseurl: "/"
   - name: 关于
     url: /about
   - name: 分类
