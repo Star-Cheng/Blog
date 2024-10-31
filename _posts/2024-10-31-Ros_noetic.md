@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "My_Ros"
+title: "My_RosNoetic"
 date:   2024-10-31
 tags: [Project]
 comments: true
-author: pianfan
+author: starcheng
 ---
 
 ###### 说明：本教程适用于初学ROS的小白, 教程介绍了如何搭建自己的工作空间以及一些常见的ROS知识点
