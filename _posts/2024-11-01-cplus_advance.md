@@ -27,7 +27,7 @@ author: starcheng
 1. 作用: 给变量起别名
 2. 语法: 数据类型 &别名 = 原名
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 int main()
@@ -53,7 +53,7 @@ int main()
 1. 作用: 函数传参时, 可以利用引用的技术让形参修饰实参
 2. 优点: 可以简化指针修改实参
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 // 交换函数
@@ -101,7 +101,7 @@ int main()
 2. 注意: 不要返回局部变量引用
 3. 函数调用作为左值
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 // 1. 不要返回局部变量的引用
@@ -135,7 +135,7 @@ int main()
 
 1. 本质引用的本质在C++内部实现是一个指针常量
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 int main()
@@ -153,7 +153,7 @@ int main()
 
 1. 作用: 常量引用主要用来修饰形参, 防止误操作
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 void showValue(int &a)
@@ -190,7 +190,7 @@ int main()
 
 ### 3.2 函数占位参数
 
-```C++
+```shell
 void func(int a, int = 10) // 占位参数也可以有默认参数
 {
     cout << "this is func" << endl;
@@ -205,7 +205,7 @@ void func(int a, int = 10) // 占位参数也可以有默认参数
 2. 重载条件: 函数名相同, 参数不同, 函数体相同
 3. 注意事项: 函数的返回值不可以作为函数重载条件
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 // 函数重载的满足条件
@@ -239,7 +239,7 @@ int main()
 1. 引用作为函数重载条件
 2. 函数重载碰到默认参数
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 // 函数重在的注意事项
@@ -283,7 +283,7 @@ int main()
     2. private : 私有权限, 类内可以访问, 类外不可以访问, 儿子不可以访问父亲的私有的内容
     3. protected : 保护权限, 类内可以访问, 类外不可以访问, 儿子也可以访问父亲保护的内容
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 // 设计一个圆类, 求圆的周长
@@ -317,7 +317,7 @@ int main()
 }
 ```
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -360,7 +360,7 @@ int main()
 1. struct默认权限为公共
 2. class默认权限为私有
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -390,7 +390,7 @@ int main()
 1. 将所有成员属性设置私有, 可以自己控制读写权限
 2. 对于写权限, 我们可以检测数据的有效性
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -446,7 +446,7 @@ int main()
     3. 析构函数没有参数, 因此不能发生重载
     4. 程序在销毁对象时候会自动调用析构, 无需手动调用, 而且只会调用一次
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 // 对象的初始化和清理
@@ -491,7 +491,7 @@ int main()
     2. 显示法
     3. 隐式转换法
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 // 1. 构造函数的分类及调用
@@ -557,7 +557,7 @@ int main()
     2. 值传递的方式给函数参数传值
     3. 以值方式返回局部对象
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 // 拷贝构造函数的调用时机
@@ -635,7 +635,7 @@ int main()
     1. 如果用户定义了有参构造函数, C++不会再提供无参构造函数, 但会提供拷贝构造函数
     2. 如果用户定义了拷贝构造函数, C++不会再提供默认拷贝构造函数
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 // 构造函数的调用规则
@@ -696,7 +696,7 @@ int main()
 1. 浅拷贝: 简单的复制拷贝
 2. 深拷贝: 在读取重新申请空间, 进行拷贝操作
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 // 深拷贝与浅拷贝
@@ -751,7 +751,7 @@ int main()
 
 - 语法: 构造函数(): : 属性1(值1), 属性2(值2), 属性3(值3) ... {}
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 // 初始化列表
@@ -788,7 +788,7 @@ int main()
 
 #### 4.2.7 类对象作为类成员
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -847,7 +847,7 @@ int main()
     1. 所有对象共享一个函数
     2. 静态成员函数只能访问静态成员变量
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -892,7 +892,7 @@ int main()
 }
 ```
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -942,7 +942,7 @@ int main()
 
 - 只有非静态成员变量才属于类的对象上
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -979,7 +979,7 @@ int main()
     1. 当形参和成员变量同名时, 可用this指针来区分
     2. 在类的非静态成员函数中返回对象本身, 可以使用return *this;
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -1026,7 +1026,7 @@ int main()
 
 - C++中空指针也可以调用成员函数, 但是也要注意有没有用到this指针
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -1080,7 +1080,7 @@ int main()
     1. 声明对象前加const成该对象为常对象
     2. 常对象只能调用常函数
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -1134,7 +1134,7 @@ int main()
     2. 类做友元
     3. 成员函数做友元
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -1173,7 +1173,7 @@ main()
 }
 ```
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -1224,7 +1224,7 @@ main()
 }
 ```
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -1287,7 +1287,7 @@ main()
 
 #### 4.5.1 加号运算符重载
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -1350,7 +1350,7 @@ main()
 
 - 作用: 可以输出自定义数据类型
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -1399,7 +1399,7 @@ main()
 
 - 作用: 通过重载递增运算符, 实现自己的整型数据
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -1465,7 +1465,7 @@ main()
     3. 拷贝构造函数, 对属性进行值拷贝
     4. 赋值运算符operator=, 对属性进行值拷贝
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -1527,7 +1527,7 @@ main()
 
 - 作用: 重载关系运算符, 可以让两个自定义类型对象进行对比操作
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -1587,7 +1587,7 @@ main()
 2. 由于重载后使用的方式非常像函数的调用, 因此成为仿函数
 3. 仿函数没有固定写法, 非常灵活
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -1643,7 +1643,7 @@ main()
     1. 一列是从基类继承过来的, 一类是自己添加的成员
     2. 从基类继承过来的表现其共性, 而新增的成员体现了其个性
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -1729,7 +1729,7 @@ main()
     2. 保护继承
     3. 私有继承
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -1807,7 +1807,7 @@ main()
 
 #### 4.6.3 继承中的对象模型
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -1852,7 +1852,7 @@ main()
 
 - 先构造父类, 再构造子类, 析构顺序和构造相反
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -1899,7 +1899,7 @@ main()
 2. 访问父类同名成员: 需要加作用域
 3. 当子类与父类拥有同名的成员函数, 子类会隐藏父类中的同名成员函数, 加作用域可以访问到父类同名成员函数
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -1965,7 +1965,7 @@ main()
 
 #### 4.6.6 继承同名静态成员处理方式
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -2028,7 +2028,7 @@ main()
 - 语法 class 子类: 继承方式 父类1, 继承方式 父类2...
 - 多继承可能会引发父类中有同名成员出现, 需要加作用域区分
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -2084,7 +2084,7 @@ main()
     2. 又有某个类同时继承两个派生类
     3. 这种继承被称为菱形继承, 或者钻石继承
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -2139,7 +2139,7 @@ main()
     1. 静态多态的函数地址早绑定 - 编译阶段确定函数地址
     2. 动态多态的函数地址晚绑定 - 运行阶段确定函数地址
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -2195,7 +2195,7 @@ main()
 
 #### 4.7.2 多态案例一: 计算器类
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -2306,7 +2306,7 @@ int main()
     1. 无法实例化对象
     2. 子类必须重写抽象类中的纯虚函数, 否则也属于抽象类
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -2341,7 +2341,7 @@ int main()
 
 #### 4.7.4 多态案例二: 制作饮品
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -2432,7 +2432,7 @@ int main()
     2. 如果子类中没有堆区数据, 可以写虚析构或纯虚析构
     3. 拥有纯虚析构函数的类也属于抽象类
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -2496,7 +2496,7 @@ int main()
 
 #### 4.7.6 多态案例三: 电脑组装
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -2673,7 +2673,7 @@ int main()
     6. ios::binary
         - 打开文件用于二进制操作, 默认为文本操作
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <fstream>
@@ -2734,7 +2734,7 @@ int main()
 
 ### 5.2 二进制文件
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <fstream>

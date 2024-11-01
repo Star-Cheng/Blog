@@ -28,7 +28,7 @@ author: starcheng
 + 建立一个通用函数, 其函数返回值和型参类大学可以不具体定义, 用一个虚拟的类型来代替
 + 语法: `template<typename T>`
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -92,7 +92,7 @@ int main()
 + 自动类型推导, 必须推导出一致的数据类型T, 才可以使用
 + 模板必须要确定出T的数据类型, 才可以使用
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -139,7 +139,7 @@ int main()
 + 排序规则从大到小, 排序算法为选择排序
 + 分别利用char数组和int数组进行测试
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -209,7 +209,7 @@ int main()
 + 函数模板调用时, 如果利用自动类型推导, 不会发生自动类型转换
 + 如果利用显示类型转换, 可以发生自动类型转换
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -260,7 +260,7 @@ int main()
     3. 函数模板也可以发生重载
     4. 如果函数模板可以产生更好的匹配, 优先调用函数模板
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -303,7 +303,7 @@ int main()
 
 + 局限性: 模板的通用性并不是万能的
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -373,7 +373,7 @@ int main()
 
 + 类模板作用: 建立一个通用类, 类中的成员数据类型可以不具体制定, 用一个虚拟的类型来代表
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -413,7 +413,7 @@ int main()
     1. 类模板没有自动类型推导功能
     2. 类模板在模板参数列表中可以有默认参数
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -462,7 +462,7 @@ int main()
     1. 普通类中的成员函数一开始就可以创建
     2. 类模板中的成员函数在调用时才创建
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -520,7 +520,7 @@ int main()
     2. 参数模板化: 将对象中的参数变为模板进行传递
     3. 整个类型模板化: 将整个对象类型模板化进行传递
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -593,7 +593,7 @@ int main()
 + 如果不指定, 编译器无法给子类分配内存
 + 如果想灵活指定出父类中T的类型, 子类也需要变为类模板
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -643,7 +643,7 @@ int main()
 
 #### 1.3.6 类模板成员函数类外实现
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -691,7 +691,7 @@ int main()
 
 Person.hpp
 
-```C++
+```shell
 #pragma once
 #include <iostream>
 using namespace std;
@@ -722,7 +722,7 @@ void Person<T1, T2>::showPerson()
 
 Person.cpp
 
-```C++
+```shell
 #include "Person.hpp"
 void test01()
 {
@@ -741,7 +741,7 @@ int main()
 + 全局函数类内实现: 直接在类内声明友元即可
 + 全局函数类外实现: 需要提前让编译器知道全局函数的存在
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -795,7 +795,7 @@ int main()
 
 MyArray.hpp
 
-```C++
+```shell
 #pragma
 #include <iostream>
 using namespace std;
@@ -902,7 +902,7 @@ private:
 
 MyArray.cpp
 
-```C++
+```shell
 #include "myArray.hpp"
 
 void PrintArray(MyArray<int> &arr)
@@ -1032,7 +1032,7 @@ int main()
 + 算法: for_each
 + 迭代器: vector《int》::iterator
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -1075,7 +1075,7 @@ int main()
 
 #### 2.5.2 Vector存放自定义数据类型
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -1118,7 +1118,7 @@ int main()
 
 #### 2.5.4 Vector容器嵌套容器
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -1175,7 +1175,7 @@ int main()
 
 #### 3.1.2 string的构造函数
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -1211,7 +1211,7 @@ int main()
     6. string& assign(const string& s);      // 把字符串s赋给当前字符串
     7. string& assign(int n, char c);        // 将n个字符c赋给当前字符串
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -1263,7 +1263,7 @@ int main()
     6. string& append(const string& s);                 // 同operator+=(const string& str)
     7. string& append(const string& s, int pos, int n); // 从pos位置开始的n个字符连接到当前字符串结尾
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -1299,7 +1299,7 @@ int main()
 + 查找: 查找指定字符串是否存在
 + 替换: 在指定的位置替换字符串
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -1337,7 +1337,7 @@ int main()
     2. ">" 返回 1
     3. "<" 返回 -1
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -1373,7 +1373,7 @@ int main()
     1. char& operator[](int n); // 重载[]操作符
     2. char& at(int n);         // 通过at方法获取字符
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -1416,7 +1416,7 @@ int main()
     3. string& insert(int pos, int n, char c);     // 在pos位置插入n个字符c
     4. string& erase(int pos, int n = npos);       // 删除从pos开始的n个字符
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -1444,7 +1444,7 @@ int main()
 + 函数原型
     1. string substr(int pos = 0, int n = npos) const; // 返回由pos开始的n个字符组成的字符串
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -1490,7 +1490,7 @@ int main()
     3. vector(n, elem);            //将构造函数将n个elem拷贝给本身
     4. vector(const vector &v);    // 拷贝构造函数
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -1537,7 +1537,7 @@ int main()
     2. assign(begin, end);                 // 将[begin, end)区间中的数据拷贝赋值给本身
     3. assign(n, elem);                    // 将n个elem拷贝赋值给本身
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -1589,7 +1589,7 @@ int main()
     4. resize(int num);       //重新指定容器的长度为num, 如果容器变长, 新位置的元素默认初始化
     5. resize(int num, elem); //重新指定容器的长度为num, 如果容器变长, 新位置的元素初始化为elem, 如果容器变短, 容器中多出的元素被删除
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -1646,7 +1646,7 @@ int main()
     6. erase(const_iterator start, const_iterator end); // 删除迭代器start到end之间的元素
     7. clear();                                         // 删除容器中所有元素
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -1700,7 +1700,7 @@ int main()
     3. front();                  // 返回容器中第一个数据元素
     4. back();                   // 返回容器中最后一个数据元素
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -1749,7 +1749,7 @@ int main()
 + 函数原型
     1. swap(v); // 将v与本身的元素互换
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -1817,7 +1817,7 @@ int main()
 + 函数原型
     1. reserve(int num); // 预留容器空间, 不会改变容器的大小, 预留的容器大小不会小于num
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -1877,7 +1877,7 @@ int main()
     3. deque(n, elem);          // 构造函数将n个elem拷贝给本身
     4. deque(const deque &deq); // 拷贝构造函数
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <deque>
@@ -1920,7 +1920,7 @@ int main()
     2. assign(beg, end);                   // 将[beg, end)区间中的数据拷贝赋值给本身
     3. assign(n, elem);                    // 将n个elem拷贝赋值给本身
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <deque>
@@ -1969,7 +1969,7 @@ int main()
     3. resize(num);         // 将容器中元素个数改变为num
     4. resize(num, elem);   // 将容器中元素个数改变为num, 并将每个元素初始化为elem
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <deque>
@@ -2029,7 +2029,7 @@ int main()
     9. erase(const_iterator pos);                   // 删除pos位置的元素, 返回下一个元素的位置
     10. clear();                                    // 删除容器中所有数据
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <deque>
@@ -2082,7 +2082,7 @@ int main()
     3. front();     // 返回容器中第一个数据元素
     4. back();      // 返回容器中最后一个数据元素
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <deque>
@@ -2122,7 +2122,7 @@ int main()
 + 函数原型
     1. sort(iterator beg, iterator end); // 将容器中的数据进行排序
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <deque>
@@ -2162,7 +2162,7 @@ int main()
 
 #### 3.4.1 评委打分案例
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <deque>
@@ -2266,7 +2266,7 @@ int main()
     1. empty(); // 判断栈是否为空
     2. size();  // 返回栈的大小
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <stack>
@@ -2316,7 +2316,7 @@ int main()
     1. empty(); // 判断队列是否为空
     2. size();  // 返回队列的大小
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <queue>
@@ -2378,7 +2378,7 @@ int main()
     3. list(n, elem);       // 构造函数将n个elem拷贝给本身
     4. list(const list& l); // 拷贝构造函数
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <list>
@@ -2421,7 +2421,7 @@ int main()
     3. list& operator=(const list& lst); // 重载等号操作符
     4. swap(lst); // 将l与本身的元素互换
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <list>
@@ -2482,7 +2482,7 @@ int main()
     3. resize(num); // 将容器resize到num大小
     4. resize(num, elem); // 将容器resize到num大小, 并将新元素赋值为elem
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <list>
@@ -2535,7 +2535,7 @@ int main()
     10. erase(pos); // 删除pos位置的数据
     11. remove(elem); // 删除容器中所有与elem值相等的元素
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <list>
@@ -2582,7 +2582,7 @@ int main()
     1. front(); // 返回第一个元素
     2. back();  // 返回最后一个元素
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <list>
@@ -2616,7 +2616,7 @@ int main()
     1. reverse(); // 翻转链表
     2. sort();    // 链表排序
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <list>
@@ -2660,7 +2660,7 @@ int main()
 
 #### 3.7.8 排序案例
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <list>
@@ -2736,7 +2736,7 @@ int main()
 + 赋值
     1. set& operator=(const set& set1); // 赋值操作符重载
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <set>
@@ -2782,7 +2782,7 @@ int main()
     2. empty(); // 判断容器是否为空
     3. swap(set1, set2); // 将set1和set2交换
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <set>
@@ -2847,7 +2847,7 @@ int main()
     4. erase(beg, end); // 删除指定元素, 返回下一个元素的迭代器
     5. erase(elem); // 删除容器中指为elem的元素
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <set>
@@ -2891,7 +2891,7 @@ int main()
     1. find(key); // 查找key是否存在, 如果存在, 返回该元素的迭代器, 否则返回set.end()
     2. count(key); // 查找key的个数
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <set>
@@ -2932,7 +2932,7 @@ int main()
     2. set插入数据的同时会返回插入结果, 表示插入是否成功
     3. multiset不会检测数据, 因此可以插入重复数据
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <set>
@@ -2979,7 +2979,7 @@ int main()
     1. pair《type, type》p(value1, value2);
     2. pair《type, type》p = make_pair(value1, value2);
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -3006,7 +3006,7 @@ int main()
 + set容器默认排序规则为从小到大
 + 利用仿函数, 可以改变排序规则
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <set>
@@ -3064,7 +3064,7 @@ int main()
 
 + 利用仿函数, 可以改变排序规则
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -3139,7 +3139,7 @@ int main()
     2. map(const map &m); // 拷贝构造函数
     3. map& operator=(const map &m); // 重载等号操作符
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <map>
@@ -3186,7 +3186,7 @@ int main()
     2. empty(); // 判断容器是否为空
     3. swap(m); // 将m与本身的元素互换
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <map>
@@ -3238,7 +3238,7 @@ int main()
     4. erase(beg, end); // 删除区间[beg, end)的所有元素
     5. erase(key); // 删除key键对应的元素
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <map>
@@ -3282,7 +3282,7 @@ int main()
     1. find(key);  // 查找key是否存在, 如果存在, 返回该键的元素的迭代器, 否则返回map.end()
     2. count(key); // 查找key的个数, 如果key存在, 返回1, 否则返回0
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <map>
@@ -3326,7 +3326,7 @@ int main()
     4. cmp(a, b) { return a > b; } // 降序
     5. cmp(a, b) { return a < b; } // 升序
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <map>
@@ -3365,7 +3365,7 @@ int main()
 
 + map只能根据key进行排序，如果key相同，则根据value进行排序
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <map>
@@ -3416,7 +3416,7 @@ int main()
 
 ### 3.10 案例-员工分组
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <string>
@@ -3508,7 +3508,7 @@ int main()
     2. 函数对象超出普通函数的概念, 函数对象可以有自己的状态
     3. 函数对象可以作为参数传递
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 
@@ -3580,7 +3580,7 @@ int main()
 
 #### 4.2.2 一元谓词
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -3620,7 +3620,7 @@ int main()
 
 #### 4.2.2 二元谓词
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -3690,7 +3690,7 @@ int main()
     5. template《class T》 T modulus《T》 // 取模仿函数
     6. template《class T》 T negate《T》 // 取反仿函数
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <functional>
@@ -3735,7 +3735,7 @@ int main()
     5. template《class T》 bool less《T》 // 小于
     6. template《class T》 bool less_equal《T》 // 小于等于
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -3777,7 +3777,7 @@ int main()
     2. template《class T》 bool logical_or《T》 // 逻辑或
     3. template《class T》 bool logical_not《T》 // 逻辑非
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -3830,7 +3830,7 @@ int main()
     3. end 结束迭代器
     4. _Func 函数或者函数对象
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -3878,7 +3878,7 @@ int main()
     3. beg2 目标容器开始迭代器
     4. _Func 函数或者函数对象
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -3940,7 +3940,7 @@ int main()
     3. end 结束迭代器
     4. value 查找的元素值
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -4014,7 +4014,7 @@ int main()
     3. end 结束迭代器
     4. _Pred 函数或者函数对象
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -4103,7 +4103,7 @@ int main()
     2. beg 开始迭代器
     3. end 结束迭代器
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -4148,7 +4148,7 @@ int main()
     4. end 结束迭代器
     5. value 查找的元素值
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -4188,7 +4188,7 @@ int main()
     3. end 结束迭代器
     4. value 查找的元素值
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -4256,7 +4256,7 @@ int main()
     3. end 结束迭代器
     4. _Pred 函数或者函数对象
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -4341,7 +4341,7 @@ int main()
     3. end 结束迭代器
     4. _Pred 谓词
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -4384,7 +4384,7 @@ int main()
     2. beg 开始迭代器
     3. end 结束迭代器
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -4428,7 +4428,7 @@ int main()
     5. end2 结束迭代器
     6. dest 目标容器
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -4475,7 +4475,7 @@ int main()
     2. beg 开始迭代器
     3. end 结束迭代器
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -4525,7 +4525,7 @@ int main()
     3. end1 结束迭代器
     4. dest目标起始迭代器
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -4562,7 +4562,7 @@ int main()
 + replace(iterator beg, iterator end, oldvalue, newvalue);
     1. 将区间内旧元素替换成新元素
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -4604,7 +4604,7 @@ int main()
     4. _Pred 谓词，条件判断
     5. newvalue 新元素
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -4657,7 +4657,7 @@ int main()
     2. c1 容器1
     3. c2 容器2
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -4709,7 +4709,7 @@ int main()
     3. end 结束迭代器
     4. value 起始值
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -4751,7 +4751,7 @@ int main()
     3. end 结束迭代器
     4. value 填充元素
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -4798,7 +4798,7 @@ int main()
     6. end2 容器2结束迭代器
     7. dest 目标容器开始迭代器
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -4846,7 +4846,7 @@ int main()
     6. end2 容器2结束迭代器
     7. dest 目标容器开始迭代器
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -4894,7 +4894,7 @@ int main()
     6. end2 容器2结束迭代器
     7. dest 目标容器开始迭代器
 
-```C++
+```shell
 #include <iostream>
 using namespace std;
 #include <vector>
