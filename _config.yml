@@ -27,7 +27,7 @@ footer-links:
 
 footer-text: Copyright (c) 2024 StarCheng
 
-url: https://star-cheng.github.io/Blog
+url: https://star-cheng.github.io/
 
 permalink: /:title/
 paginate_path: /page:num/
